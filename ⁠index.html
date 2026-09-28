@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قياف | Qayyaf Coffee</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Tajawal', sans-serif, Arial;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: right;
+            line-height: 1.6;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: #0d0d0d;
+            border-bottom: 1px solid #222;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo-img {
+            height: 45px;
+            object-fit: contain;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #d4af37;
+        }
+        .hero {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('image_9.png') center/cover;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #f3e5ab;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            color: #ddd;
+        }
+        .section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: #d4af37;
+        }
+        .section > p {
+            color: #aaa;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature-box {
+            background: #1b1b1b;
+            padding: 25px;
+            border-radius: 10px;
+            width: 30%;
+            min-width: 250px;
+            border: 1px solid #2a2a2a;
+        }
+        .feature-box h3 {
+            color: #f3e5ab;
+            margin-bottom: 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .gallery img:hover {
+            transform: scale(1.02);
+        }
+        .menu-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .menu-container img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        footer {
+            background: #0d0d0d;
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #222;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <header>
+        <div>
+            <img src="image_12.png" alt="شعار قياف" class="logo-img">
+        </div>
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#">عن الكافيه</a>
+            <a href="#">المنيو</a>
+            <a href="#">المعرض</a>
+            <a href="#">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <!-- الواجهة الرئيسية -->
+    <section class="hero">
+        <h1>قياف .. تتبع الأثر لتصل إلى ما ترشد إليه</h1>
+        <p>مكان يجمع القهوة، الهدوء، والتفاصيل الجميلة في تجربة واحدة[span_13](start_span)[span_13](end_span).</p>
+    </section>
+
+    <!-- قسم من نحن / بماذا نتميز -->
+    <section class="section">
+        <h2>بماذا نتميز</h2>
+        <p>نحرص في قياف على تقديم تجربة استثنائية تبدأ من تفاصيل المكان الهادئة وحتى طعم القهوة المصنوعة بكل عناية.</p>
+        
+        <div class="features">
+            <div class="feature-box">
+                <h3>أجواء هادئة</h3>
+                <p>مساحة مصممة بعناية لتمنحك الراحة والهدوء.</p>
+            </div>
+            <div class="feature-box">
+                <h3>قهوة مختصة</h3>
+                <p>مستخلصة بأعلى معايير الجودة والدقة.</p>
+            </div>
+            <div class="feature-box">
+                <h3>تفاصيل فريدة</h3>
+                <p>تجربة استثنائية تبقى في الذاكرة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنيو -->
+    <section class="section" style="background-color: #161616;">
+        <h2>قائمة المنتجات (المنيو)</h2>
+        <p>استكشف تشكيلة المشروبات والحلويات لدينا</p>
+        <div class="menu-container">
+            <img src="image_11.png" alt="منيو كافيه قياف">
+        </div>
+    </section>
+
+    <!-- معرض الصور (الديكور والمنتجات) -->
+    <section class="section">
+        <h2>معرض الصور</h2>
+        <p>لقطات تعكس أجواء وتفاصيل كافيه قياف</p>
+        
+        <div class="gallery">
+            <img src="image.png" alt="جلسات كافيه قياف الداخلية">
+            <img src="image_2.png" alt="أكواب قياف المميزة">
+            <img src="image_3.png" alt="قصة وعلامة قياف">
+            <img src="image_5.png" alt="تحضير قهوة الاسبريسو">
+            <img src="image_6.png" alt="أجواء هادئة في القهوة">
+            <img src="image_10.png" alt="تفاصيل الجلسات والتقديم">
+        </div>
+    </section>
+
+    <!-- تواصل معنا -->
+    <section class="section" style="background-color: #161616;">
+        <h2>تواصل معنا</h2>
+        <p>يسعدنا زيارتكم وتواصلكم معنا دائماً.</p>
+        <p style="margin-top: 15px; color: #f3e5ab; font-weight: bold;">📍 الموقع الرسمي | 📱 حسابات التواصل الاجتماعي</p>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 - كافيه قياف (Qayyaf)</p>
+    </footer>
+
+</body>
+</html>
